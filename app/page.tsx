@@ -1,6 +1,7 @@
 import { work } from "./work";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-2">
               {work.technologies.map((technology) => <Badge key={technology} variant='secondary'>{technology}</Badge>)}
             </div>
+            <div className="flex justify-center"><Image src={work.image} alt={work.title} className="w-2/3" width={1000} height={1000} /></div>
           </CardContent>
         </Card>
       ))}
