@@ -2,10 +2,8 @@
 interface Work {
   title: string;
   position: string;
-  subtitle: string;
-  description: string;
   image: string;
-  link?: string;
+  link: string;
   technologies: string[];
 }
 
@@ -13,37 +11,36 @@ export const work: Work[] = [
   {
     title: "Memory Labs",
     position: "Founder",
-    subtitle: "Workflow automation for home photo & video digitization",
-    description: "Work 1",
     image: "/memorylabs/1.png",
-    link: "Work 1",
+    link: "https://memorylabs.app",
     technologies: ["Next.js", "PostgreSQL", "Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "GHA", "Stripe", "Tailwind + Shadcn"],
   },
   {
     title: "Stable Video",
     position: "SWE @ GrabLabs",
-    subtitle: "Workflow automation for home photo & video digitization",
-    description: "Work 1",
-    image: "/memorylabs/1.png",
-    link: "Work 1",
+    image: "/stablevideo/1.png",
+    link: "https://www.stablevideo.com/",
+    technologies: ["Next.js", "PostgreSQL", "Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
+  },
+  {
+    title: "Electric Dev Tools",
+    position: "Creator",
+    image: "/electricdevtools/1.png",
+    link: "https://electricdevtools.com",
     technologies: ["Next.js", "PostgreSQL", "Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
   },
   {
     title: "Chatalyst - Twitch Extension",
     position: "SWE @ GrabLabs",
-    subtitle: "Workflow automation for home photo & video digitization",
-    description: "Work 1",
-    image: "/memorylabs/1.png",
-    link: "Work 1",
+    image: "/chatalyst/1.png",
+    link: "https://portal.grablabs.com/chatalyst/join/",
     technologies: ["React", "Express"]
   },
   {
     title: "Watts In The Box",
     position: "Side Project",
-    subtitle: "Workflow automation for home photo & video digitization",
-    description: "Work 1",
-    image: "/memorylabs/1.png",
-    link: "Work 1",
+    image: "/wattsinthebox/1.png",
+    link: "https://www.instagram.com/watts.in.the.box/",
     technologies: ["Next.js", "PostgreSQL", "Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
   },
 ];
