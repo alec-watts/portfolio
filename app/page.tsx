@@ -14,24 +14,22 @@ export default function Home() {
     <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-2">
       {/* Header */}
       <div className="flex gap-2 pt-10">
-        <Image src={Face} alt="Face" className="w-32 h-auto rounded-lg" />
-
-        <div className="flex flex-col gap-1">
+        <Image src={Face} alt="Face" className="w-20 h-auto rounded-lg" />
+        <div className="flex flex-col justify-center">
           <h1 className="text-3xl font-semibold">Alec Watts</h1>
-          <p className="text-sm">(310) 922-1006</p>
-          <p className="text-sm">alecwatts1@gmail.com</p>
-
-          <div className="flex gap-2">
+          <div className="flex flex-row gap-3 items-center">
             <Link href="https://www.linkedin.com/in/alexander-h-watts/" target="_blank">
               <Image src={LinkedIn} alt="LinkedIn" className="w-6 h-auto" />
             </Link>
             <Link href="https://github.com/alec-watts" target="_blank">
               <Image src={Github} alt="Github" className="w-6 h-auto" />
             </Link>
+            <Link href="/alexander-watts-resume.pdf" target="_blank">
+              <FileUser className="h-6 w-6" />
+            </Link>
+            <p className="text-sm">(310) 922-1006</p>
+            <p className="text-sm">alecwatts1@gmail.com</p>
           </div>
-          <Link href="/alexander-watts-resume.pdf" target="_blank" className="flex text-sm items-center gap-1">
-            Resume <FileUser className="h-4 w-4" />
-          </Link>
         </div>
       </div>
 
