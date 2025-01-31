@@ -21,7 +21,7 @@ export const work: Work[] = [
     position: "Founder",
     images: [ML1],
     link: "https://memorylabs.app",
-    technologies: ["Next.js", "PostgreSQL", "Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "GHA", "Stripe", "Tailwind + Shadcn"],
+    technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
   },
   {
     title: "Stable Video",
@@ -35,7 +35,7 @@ export const work: Work[] = [
     position: "Creator",
     images: [ED1],
     link: "https://electricdevtools.com",
-    technologies: ["Next.js", "PostgreSQL", "Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
+    technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
   },
   {
     title: "Chatalyst - Twitch Extension",
