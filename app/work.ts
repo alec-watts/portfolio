@@ -1,10 +1,15 @@
 import { StaticImageData } from "next/image";
 import UM from "@/public/education/UM.png";
 import HW from "@/public/education/HW.png";
+import MLIcon from "@/public/memorylabs/icon.png";
 import ML1 from "@/public/memorylabs/1.png";
+import SVIcon from "@/public/stablevideo/icon.png";
 import SV1 from "@/public/stablevideo/1.png";
+import EDIcon from "@/public/electricdevtools/icon.png";
 import ED1 from "@/public/electricdevtools/1.png";
+import CHIcon from "@/public/chatalyst/icon.png";
 import CH1 from "@/public/chatalyst/1.png";
+import WBIcon from "@/public/wattsinthebox/icon.png";
 import WB1 from "@/public/wattsinthebox/1.png";
 
 interface Education {
@@ -32,6 +37,7 @@ export const education: Education[] = [
 interface Work {
   title: string;
   position: string;
+  icon?: StaticImageData;
   images: StaticImageData[];
   link: string;
   technologies: string[];
@@ -42,6 +48,7 @@ export const work: Work[] = [
   {
     title: "Memory Labs",
     position: "Founder",
+    icon: MLIcon,
     images: [ML1],
     link: "https://memorylabs.app",
     technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
@@ -55,6 +62,7 @@ export const work: Work[] = [
   {
     title: "Stable Video",
     position: "SWE, GrabLabs",
+    icon: SVIcon,
     images: [SV1],
     link: "https://www.stablevideo.com/",
     technologies: ["Next.js", "PostgreSQL", "Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
@@ -65,6 +73,7 @@ export const work: Work[] = [
   {
     title: "Electric Dev Tools",
     position: "Creator",
+    icon: EDIcon,
     images: [ED1],
     link: "https://electricdevtools.com",
     technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
@@ -76,6 +85,7 @@ export const work: Work[] = [
   {
     title: "Chatalyst - Twitch Extension",
     position: "SWE, GrabLabs",
+    icon: CHIcon,
     images: [CH1],
     link: "https://portal.grablabs.com/chatalyst/join/",
     technologies: ["React.js", "Express.js", "GraphQL", "Firestore"],
@@ -86,6 +96,7 @@ export const work: Work[] = [
   {
     title: "Watts In The Box",
     position: "Project",
+    icon: WBIcon,
     images: [WB1],
     link: "https://www.instagram.com/watts.in.the.box/",
     technologies: ["ESP32", "RaspberryPi", "Micropython", "3D Printing", "Soldering"],

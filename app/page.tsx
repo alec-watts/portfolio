@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h1 className="text-3xl font-semibold pt-10">Education</h1>
+      <h1 className="text-3xl font-semibold pl-1 pt-10">Education</h1>
       {education.map((education)   => (
         <Card key={education.school}>
           <CardHeader className="flex flex-row gap-2 p-4 pb-2">
@@ -50,14 +50,20 @@ export default function Home() {
         </Card>
       ))}
 
-      <h1 className="text-3xl font-semibold pt-10">My Work</h1>
+      <h1 className="text-3xl font-semibold pl-1 pt-10">My Work</h1>
       {work.map((work) => (
         <Card key={work.title}>
-          <CardHeader className="pb-3">  
-            <Link href={work.link} target="_blank">
-              <CardTitle className="flex items-center justify-between text-xl">{work.title} <LinkIcon className="h-4 w-4" /></CardTitle>
+          <CardHeader className="pb-3">
+            <Link href={work.link} target="_blank" className="flex justify-between gap-2 items-center">
+              <div className="flex items-center gap-2">
+                <Image src={work.icon} alt={work.title} className="h-8 w-auto" />
+                <div>
+                  <CardTitle>{work.title}</CardTitle>
+                  <CardDescription>{work.position}</CardDescription>
+                </div>
+              </div>
+              <LinkIcon className="h-4 w-4" />
             </Link>
-            <CardDescription>{work.position}</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col gap-4">
             <div className="flex flex-wrap gap-1">
