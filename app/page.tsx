@@ -61,7 +61,7 @@ export default function Home() {
       <Label className="font-semibold text-md pl-1 pt-1">My Work</Label>
       {work.map((work) => (
         <Card key={work.title}>
-          <CardHeader className="pb-3">
+          <CardHeader>
             <Link href={work.link} target="_blank" className="flex justify-between gap-2 items-center">
               <div className="flex items-center gap-2">
                 <Image src={work.icon} alt={work.title} className="h-8 w-auto" />
@@ -73,7 +73,8 @@ export default function Home() {
               <LinkIcon className="h-4 w-4" />
             </Link>
           </CardHeader>
-          <CardContent className="flex flex-col gap-4">
+          
+          <CardContent className="flex flex-col gap-3">
             <div className="flex flex-wrap gap-1">
               {work.technologies.map((technology) => <Badge key={technology} variant='secondary'>{technology}</Badge>)}
             </div>
