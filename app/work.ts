@@ -37,7 +37,7 @@ export const education: Education[] = [
 interface Work {
   title: string;
   position: string;
-  icon?: StaticImageData;
+  icon: StaticImageData;
   images: StaticImageData[];
   link: string;
   technologies: string[];
