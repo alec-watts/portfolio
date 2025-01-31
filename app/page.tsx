@@ -2,6 +2,7 @@ import { work } from "./work";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import Image from "next/image";
+import { Link } from "lucide-react";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       {work.map((work) => (
         <Card key={work.title} className="shadow-none">
           <CardHeader>  
-            <CardTitle>{work.title}</CardTitle>
+            <CardTitle className="flex items-center gap-2">{work.title} <Link className="h-4 w-4" /></CardTitle>
             <CardDescription>{work.position}</CardDescription>
           </CardHeader>
           <CardContent>
