@@ -76,7 +76,7 @@ export default function Home() {
             </div>
 
             <div className="flex justify-center">
-              <Carousel className="w-4/5">
+              <Carousel className="flex flex-col gap-3">
                 <CarouselContent>
                   {work.media.map((image, index) => (
                     <CarouselItem key={index} className="flex justify-center">
@@ -87,8 +87,10 @@ export default function Home() {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <div className="relative flex justify-center gap-2">
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </div>
               </Carousel>
             </div>
 
