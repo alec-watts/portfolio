@@ -49,7 +49,7 @@ export const work: Work[] = [
     title: "Memory Labs",
     position: "Founder",
     icon: MLIcon,
-    media: ['/memorylabs/1.mp4'], // ML1
+    media: ['/memorylabs/add-client.mp4', '/memorylabs/upload.mp4', '/memorylabs/review.mp4', '/memorylabs/client-send.mp4', '/memorylabs/apple-wide.mp4', '/memorylabs/google-wide.mp4'],
     link: "https://memorylabs.app",
     technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
     bulletPoints: [
