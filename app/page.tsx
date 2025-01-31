@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Image from "next/image";
-import { Link as LinkIcon, FileUser } from "lucide-react";
+import { Link as LinkIcon } from "lucide-react";
 import Link from "next/link";
 import Face from "@/public/face.jpeg";
 import LinkedIn from "@/public/linkedin.png";
@@ -14,9 +14,9 @@ export default function Home() {
     <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-2">
       {/* Header */}
       <div className="flex gap-2 pt-10">
-        <Image src={Face} alt="Face" className="w-20 h-auto rounded-lg" />
-        <div className="flex flex-col justify-center">
-          <h1 className="text-3xl font-semibold">Alec Watts</h1>
+        <Image src={Face} alt="Face" className="h-20 w-auto rounded-lg" />
+        <div className="flex flex-col justify-between">
+          <h1 className="text-5xl font-semibold">Alec Watts</h1>
           <div className="flex flex-wrap gap-2 items-center">
             <Link href="https://www.linkedin.com/in/alexander-h-watts/" target="_blank">
               <Image src={LinkedIn} alt="LinkedIn" className="w-5 h-auto" />
@@ -25,9 +25,11 @@ export default function Home() {
               <Image src={Github} alt="Github" className="w-5 h-auto" />
             </Link>
             <Link href="/alexander-watts-resume.pdf" target="_blank">
-              <FileUser className="h-5 w-5" />
+              <Badge variant="secondary" className="text-sm flex items-center gap-1">Resume</Badge>
             </Link>
-            <Badge variant="secondary" className="text-sm">(310) 922-1006</Badge>
+            <Link href="sms:+13109221006" target="_blank">
+              <Badge variant="secondary" className="text-sm">(310) 922-1006</Badge>
+            </Link>
             <Badge variant="secondary" className="text-sm">alecwatts1@gmail.com</Badge>
           </div>
         </div>
@@ -52,7 +54,7 @@ export default function Home() {
         </Card>
       ))}
 
-      <h1 className="text-3xl font-semibold pl-1 pt-8 text-center">My Work</h1>
+      {/* <h1 className="text-3xl font-semibold pl-1 pt-8 text-center">My Work</h1> */}
       {work.map((work) => (
         <Card key={work.title}>
           <CardHeader className="pb-3">
