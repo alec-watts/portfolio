@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
-import UM from "@/public/UM.png";
-import HW from "@/public/HW.png";
+import UM from "@/public/education/UM.png";
+import HW from "@/public/education/HW.png";
 import ML1 from "@/public/memorylabs/1.png";
 import SV1 from "@/public/stablevideo/1.png";
 import ED1 from "@/public/electricdevtools/1.png";

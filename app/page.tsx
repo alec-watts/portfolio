@@ -8,20 +8,23 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="w-full md:w-1/2 flex flex-col gap-2">
+    <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-2">
       <h1 className="text-3xl font-bold">Education</h1>
       {education.map((education) => (
         <Card key={education.school} className="shadow-none">
           <CardHeader className="flex flex-row gap-2 p-4 pb-2">
             <Image src={education.image} alt={education.school} className="h-10 w-auto" />
-            <div className="flex flex-col">
+            <div>
               <CardTitle>{education.school}</CardTitle>
               <CardDescription>{education.degree}</CardDescription>
             </div>
           </CardHeader>
-          {education.coursework && <CardContent className="flex flex-col gap-4 p-4 pt-0">
-            <p className="text-sm">Coursework: {education.coursework}</p>
-          </CardContent>}
+
+          {education.coursework && (
+            <CardContent className="flex flex-col gap-4 p-4 pt-0">
+              <p className="text-sm">Coursework: {education.coursework}</p>
+            </CardContent>
+          )}
         </Card>
       ))}
 
@@ -30,7 +33,7 @@ export default function Home() {
         <Card key={work.title} className="shadow-none">
           <CardHeader className="pb-3">  
             <Link href={work.link} target="_blank">
-              <CardTitle className="flex items-center justify-between text-lg">{work.title} <LinkIcon className="h-4 w-4" /></CardTitle>
+              <CardTitle className="flex items-center justify-between text-xl">{work.title} <LinkIcon className="h-4 w-4" /></CardTitle>
             </Link>
             <CardDescription>{work.position}</CardDescription>
           </CardHeader>
