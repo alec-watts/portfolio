@@ -8,6 +8,7 @@ import Link from "next/link";
 import Face from "@/public/face.jpeg";
 import LinkedIn from "@/public/linkedin.png";
 import Github from "@/public/github.png";
+import { Label } from "@/components/ui/label"
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
       {/* Header */}
       <div className="flex gap-2 pt-10">
         <Image src={Face} alt="Face" className="h-20 w-auto rounded-lg" />
-        <div className="flex flex-col justify-between">
-          <h1 className="text-5xl font-semibold">Alec Watts</h1>
+        <div className="flex flex-col justify-around">
+          <h1 className="text-xl md:text-4xl font-semibold">Alec Watts</h1>
           <div className="flex flex-wrap gap-2 items-center">
             <Link href="https://www.linkedin.com/in/alexander-h-watts/" target="_blank">
               <Image src={LinkedIn} alt="LinkedIn" className="w-5 h-auto" />
@@ -25,17 +26,17 @@ export default function Home() {
               <Image src={Github} alt="Github" className="w-5 h-auto" />
             </Link>
             <Link href="/alexander-watts-resume.pdf" target="_blank">
-              <Badge variant="secondary" className="text-sm flex items-center gap-1">Resume</Badge>
+              <Badge variant="secondary" className="text-xs flex items-center gap-1">Resume</Badge>
             </Link>
             <Link href="sms:+13109221006" target="_blank">
-              <Badge variant="secondary" className="text-sm">(310) 922-1006</Badge>
+              <Badge variant="secondary" className="text-xs">(310) 922-1006</Badge>
             </Link>
-            <Badge variant="secondary" className="text-sm">alecwatts1@gmail.com</Badge>
+            <Badge variant="secondary" className="text-xs">alecwatts1@gmail.com</Badge>
           </div>
         </div>
       </div>
 
-      {/* <h1 className="text-3xl font-semibold pl-1 pt-10">Education</h1> */}
+      <Label className="font-semibold text-md pl-1 pt-1">Education</Label>
       {education.map((education)   => (
         <Card key={education.school}>
           <CardHeader className="flex flex-row gap-2 p-4 pb-2">
@@ -54,7 +55,7 @@ export default function Home() {
         </Card>
       ))}
 
-      {/* <h1 className="text-3xl font-semibold pl-1 pt-8 text-center">My Work</h1> */}
+      <Label className="font-semibold text-md pl-1 pt-1">My Work</Label>
       {work.map((work) => (
         <Card key={work.title}>
           <CardHeader className="pb-3">
