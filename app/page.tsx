@@ -78,38 +78,40 @@ export default function Home() {
               {work.technologies.map((technology) => <Badge key={technology} variant='secondary'>{technology}</Badge>)}
             </div>
 
-            <div className="flex justify-center">
-              <Carousel className="flex flex-col gap-3">
-                <CarouselContent>
-                  {work.media.map((media, index) => (
-                    <CarouselItem key={index} className="flex justify-center">
-                      {typeof media === 'string' 
-                        ? media.includes('https') 
-                          ? <AspectRatio ratio={14 / 9}>
-                              <iframe className="w-full h-full rounded-sm"  src={media} allowFullScreen />
-                            </AspectRatio>
-                          : <video src={media} className="rounded-sm" autoPlay muted loop playsInline />
-                        : <Image src={media} alt={media.src} />
-                      }
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-
-                {work.media.length > 1 && (
-                  <div className="relative flex justify-center gap-2">
-                    <CarouselPrevious />
-                    <CarouselNext />
-                  </div>
-                )}
-              </Carousel>
-            </div>
-            <Custom element={work.customElement} />
-
             {work.bulletPoints && (
-              <ul className="list-disc list-inside text-sm">
+              <ul className="list-disc list-inside">
                 {work.bulletPoints.map((bulletPoint, index) => <li key={index}>{bulletPoint}</li>)}
               </ul>
             )}
+
+            {work.media.length > 0 && (
+              <div className="flex justify-center">
+                <Carousel className="flex flex-col gap-3">
+                  <CarouselContent>
+                    {work.media.map((media, index) => (
+                      <CarouselItem key={index} className="flex justify-center">
+                        {typeof media === 'string' 
+                          ? media.includes('https') 
+                            ? <AspectRatio ratio={14 / 9}>
+                                <iframe className="w-full h-full rounded-sm"  src={media} allowFullScreen />
+                              </AspectRatio>
+                            : <video src={media} className="rounded-sm" autoPlay muted loop playsInline />
+                          : <Image src={media} alt={media.src} />
+                        }
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+
+                  {work.media.length > 1 && (
+                    <div className="relative flex justify-center gap-2">
+                      <CarouselPrevious />
+                      <CarouselNext />
+                    </div>
+                  )}
+                </Carousel>
+              </div>
+            )}
+            <Custom element={work.customElement} />
           </CardContent>
         </Card>
       ))}

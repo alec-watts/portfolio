@@ -106,7 +106,11 @@ export const work: Work[] = [
     link: "https://www.instagram.com/watts.in.the.box/",
     technologies: ["ESP32", "RaspberryPi", "Micropython", "3D Printing", "Soldering"],
     bulletPoints: [
-      "Inspired by James Turrell's artwork, I created an interactive IoT light fixture that dynamically responds to sound, motion, and touch using a microcontroller, light strip, microphone, accelerometer, and motion detector. Tested various materials and designs to create a light box that effectively diffused light while maintaining simplicity and ease of assembly. Implemented simplistic remote control functionality with Apple Shortcuts. Consistently shared progress on Instagram and competed in the BuildSpace accelerator program to showcase and refine the work."
+      'Interactive light fixtured that responds to sound, motion, and touch',
+      'Built with ESP32 microcontroller, light strip, microphone, accelerometer, & motion detector',
+      'Remote control using Apple Shortcuts over Local Network',
+      'Structure made of 3D printed pieces & off the shelf materials',
+      'Inspired by James Turrell\'s artwork',
     ],
   },
 ];
