@@ -5,6 +5,8 @@ import MLIcon from "@/public/memorylabs/icon.png";
 // import ML1 from "@/public/memorylabs/1.png";
 import SVIcon from "@/public/stablevideo/icon.png";
 import SV1 from "@/public/stablevideo/1.png";
+import SV2 from "@/public/stablevideo/2.png";
+import SV3 from "@/public/stablevideo/3.png";
 import EDIcon from "@/public/electricdevtools/icon.png";
 import ED1 from "@/public/electricdevtools/1.png";
 import CHIcon from "@/public/chatalyst/icon.png";
@@ -63,7 +65,7 @@ export const work: Work[] = [
     title: "Stable Video",
     position: "SWE, GrabLabs",
     icon: SVIcon,
-    media: [SV1],
+    media: [SV1, SV2, SV3],
     link: "https://www.stablevideo.com/",
     technologies: ["Next.js", "Postgres + Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
     bulletPoints: [
