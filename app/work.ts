@@ -65,7 +65,7 @@ export const work: Work[] = [
     icon: SVIcon,
     images: [SV1],
     link: "https://www.stablevideo.com/",
-    technologies: ["Next.js", "PostgreSQL", "Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
+    technologies: ["Next.js", "Postgres + Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
     bulletPoints: [
       "Alongside a team built a consumer application for StabilityAI’s video generation model, using Next.js, Prisma Postgres, S3 and Cloudfront, where users can generate videos from text & photo, view history, & vote on results."
     ],

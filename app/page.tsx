@@ -17,7 +17,7 @@ export default function Home() {
         <Image src={Face} alt="Face" className="w-36 h-auto rounded-lg" />
 
         <div className="flex flex-col gap-1">
-          <h1 className="text-3xl font-bold">Alexander Watts</h1>
+          <h1 className="text-3xl font-bold">Alec Watts</h1>
           <h2 className="text-xl font-bold">Software Engineer</h2>
 
           <div className="flex gap-2">
