@@ -9,6 +9,7 @@ import Face from "@/public/face.jpeg";
 import LinkedIn from "@/public/linkedin.png";
 import Github from "@/public/github.png";
 import { Label } from "@/components/ui/label"
+import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 export default function Home() {
   return (
@@ -78,16 +79,20 @@ export default function Home() {
             <div className="flex justify-center">
               <Carousel className="flex flex-col gap-3">
                 <CarouselContent>
-                  {work.media.map((image, index) => (
+                  {work.media.map((media, index) => (
                     <CarouselItem key={index} className="flex justify-center">
-                      {typeof image === 'string' 
-                        ? <video src={image} className="rounded-sm" autoPlay muted loop playsInline />
-                        : <Image src={image} alt={image.src} />
+                      {typeof media === 'string' 
+                        ? media.includes('https') 
+                          ? <AspectRatio ratio={14 / 9}>
+                              <iframe className="w-full h-full" src={media} allowFullScreen />
+                            </AspectRatio>
+                          : <video src={media} className="rounded-sm" autoPlay muted loop playsInline />
+                        : <Image src={media} alt={media.src} />
                       }
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                
+
                 {work.media.length > 1 && (
                   <div className="relative flex justify-center gap-2">
                     <CarouselPrevious />

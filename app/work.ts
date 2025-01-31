@@ -2,13 +2,14 @@ import { StaticImageData } from "next/image";
 import UM from "@/public/education/UM.png";
 import HW from "@/public/education/HW.png";
 import MLIcon from "@/public/memorylabs/icon.png";
-// import ML1 from "@/public/memorylabs/1.png";
 import SVIcon from "@/public/stablevideo/icon.png";
 import SV1 from "@/public/stablevideo/1.png";
 import SV2 from "@/public/stablevideo/2.png";
 import SV3 from "@/public/stablevideo/3.png";
 import EDIcon from "@/public/electricdevtools/icon.png";
-import ED1 from "@/public/electricdevtools/1.png";
+import FFmpeg from "@/public/electricdevtools/ffmpeg.png";
+import Zipper from "@/public/electricdevtools/zipper.png";
+import NPM from "@/public/electricdevtools/npm.png";
 import CHIcon from "@/public/chatalyst/icon.png";
 import CH1 from "@/public/chatalyst/1.png";
 import WBIcon from "@/public/wattsinthebox/icon.png";
@@ -76,7 +77,7 @@ export const work: Work[] = [
     title: "Electric Dev Tools",
     position: "Creator",
     icon: EDIcon,
-    media: [ED1],
+    media: ['https://www.youtube.com/embed/TN5xaWhzXvs?si=o9Va7yrEe9v8Ws-v', Zipper, FFmpeg, NPM],
     link: "https://electricdevtools.com",
     technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "NPM", "Stripe", "Tailwind + Shadcn"],
     bulletPoints: [
