@@ -66,14 +66,14 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <Image src={work.icon} alt={work.title} className="h-8 w-auto" />
                 <div>
-                  <CardTitle>{work.title}</CardTitle>
+                  <CardTitle className="text-lg">{work.title}</CardTitle>
                   <CardDescription>{work.position}</CardDescription>
                 </div>
               </div>
               <LinkIcon className="h-4 w-4" />
             </Link>
           </CardHeader>
-          
+
           <CardContent className="flex flex-col gap-3">
             <div className="flex flex-wrap gap-1">
               {work.technologies.map((technology) => <Badge key={technology} variant='secondary'>{technology}</Badge>)}

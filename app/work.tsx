@@ -106,10 +106,10 @@ export const work: Work[] = [
     link: "https://www.instagram.com/watts.in.the.box/",
     technologies: ["ESP32", "RaspberryPi", "Micropython", "3D Printing", "Soldering"],
     bulletPoints: [
-      'Interactive light fixtured that responds to sound, motion, and touch',
+      'Interactive light fixture that responds to sound, motion, and touch',
       'Built with ESP32 microcontroller, light strip, microphone, accelerometer, & motion detector',
       'Remote control using Apple Shortcuts over Local Network',
-      'Structure made of 3D printed pieces & off the shelf materials',
+      'Constructed with 3D printed pieces & off the shelf materials',
       'Inspired by James Turrell\'s artwork',
     ],
   },
