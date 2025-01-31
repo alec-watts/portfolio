@@ -17,7 +17,7 @@ export const work: Work[] = [
     description: "Work 1",
     image: "Work 1",
     link: "Work 1",
-    technologies: ["Next.js", "PostgreSQL", "Prisma", "FFmpeg", "Docker", "AWS: CDK, S3, CloudFront, Lambda, ECR, ECS", "Clerk Auth", "Github Actions", "Stripe", "Tailwind + Shadcn"],
+    technologies: ["Next.js", "PostgreSQL", "Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "GHA", "Stripe", "Tailwind + Shadcn"],
   },
   {
     title: "Stable Video",

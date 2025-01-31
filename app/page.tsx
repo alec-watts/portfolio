@@ -1,15 +1,22 @@
 import { work } from "./work";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full md:w-1/2 flex flex-col gap-4">
       {work.map((work) => (
-        <div key={work.title}>
-          <h2>{work.title}</h2>
-          <p>{work.position}</p>
-          {work.technologies.map((technology) => <Badge key={technology} variant='secondary'>{technology}</Badge>)}
-        </div>
+        <Card key={work.title} className="shadow-none">
+          <CardHeader>  
+            <CardTitle>{work.title}</CardTitle>
+            <CardDescription>{work.position}</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-wrap gap-2">
+              {work.technologies.map((technology) => <Badge key={technology} variant='secondary'>{technology}</Badge>)}
+            </div>
+          </CardContent>
+        </Card>
       ))}
     </div>
   );
