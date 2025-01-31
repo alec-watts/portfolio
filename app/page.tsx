@@ -11,7 +11,7 @@ export default function Home() {
     <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-2">
       <h1 className="text-3xl font-bold">Education</h1>
       {education.map((education) => (
-        <Card key={education.school} className="shadow-none">
+        <Card key={education.school}>
           <CardHeader className="flex flex-row gap-2 p-4 pb-2">
             <Image src={education.image} alt={education.school} className="h-10 w-auto" />
             <div>
@@ -30,7 +30,7 @@ export default function Home() {
 
       <h1 className="text-3xl font-bold">My Work</h1>
       {work.map((work) => (
-        <Card key={work.title} className="shadow-none">
+        <Card key={work.title}>
           <CardHeader className="pb-3">  
             <Link href={work.link} target="_blank">
               <CardTitle className="flex items-center justify-between text-xl">{work.title} <LinkIcon className="h-4 w-4" /></CardTitle>
@@ -55,6 +55,12 @@ export default function Home() {
                 <CarouselNext />
               </Carousel>
             </div>
+
+            {work.bulletPoints && (
+              <ul className="list-disc list-inside text-sm">
+                {work.bulletPoints.map((bulletPoint, index) => <li key={index}>{bulletPoint}</li>)}
+              </ul>
+            )}
           </CardContent>
         </Card>
       ))}
