@@ -13,7 +13,7 @@ import NPM from "@/public/electricdevtools/npm.png";
 import CHIcon from "@/public/chatalyst/icon.png";
 import CH1 from "@/public/chatalyst/1.png";
 import WBIcon from "@/public/wattsinthebox/icon.png";
-import WB1 from "@/public/wattsinthebox/1.png";
+import { InstagramEmbed } from 'react-social-media-embed';
 
 interface Education {
   school: string;
@@ -42,6 +42,7 @@ interface Work {
   position: string;
   icon: StaticImageData;
   media: (StaticImageData | string)[];
+  customElement?: React.ReactNode;
   link: string;
   technologies: string[];
   bulletPoints: string[];
@@ -100,7 +101,8 @@ export const work: Work[] = [
     title: "Watts In The Box",
     position: "Project",
     icon: WBIcon,
-    media: [WB1],
+    media: [],
+    customElement: <InstagramEmbed url="https://www.instagram.com/watts.in.the.box/" width='100%' />,
     link: "https://www.instagram.com/watts.in.the.box/",
     technologies: ["ESP32", "RaspberryPi", "Micropython", "3D Printing", "Soldering"],
     bulletPoints: [

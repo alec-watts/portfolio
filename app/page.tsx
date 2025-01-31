@@ -1,3 +1,4 @@
+'use client'
 import { work, education } from "./work";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -10,6 +11,7 @@ import LinkedIn from "@/public/linkedin.png";
 import Github from "@/public/github.png";
 import { Label } from "@/components/ui/label"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
+import Custom from "./Custom";
 
 export default function Home() {
   return (
@@ -101,6 +103,7 @@ export default function Home() {
                 )}
               </Carousel>
             </div>
+            <Custom element={work.customElement} />
 
             {work.bulletPoints && (
               <ul className="list-disc list-inside text-sm">
