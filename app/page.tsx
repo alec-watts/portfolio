@@ -42,7 +42,7 @@ export default function Home() {
       <Label className="font-semibold text-md pl-1 pt-1">Education</Label>
       {education.map((education)   => (
         <Card key={education.school}>
-          <CardHeader className="flex flex-row gap-2 p-4 pb-2">
+          <CardHeader className="flex flex-row gap-3 py-4">
             <Image src={education.image} alt={education.school} className="h-10 w-auto" />
             <div>
               <CardTitle>{education.school}</CardTitle>
@@ -51,8 +51,8 @@ export default function Home() {
           </CardHeader>
 
           {education.coursework && (
-            <CardContent className="flex flex-col gap-4 p-4 pt-0">
-              <p className="text-sm">Coursework: {education.coursework}</p>
+            <CardContent className="flex flex-col gap-4 py-4 pt-0">
+              <p className="text-xs">Coursework: {education.coursework}</p>
             </CardContent>
           )}
         </Card>
@@ -62,8 +62,8 @@ export default function Home() {
       {work.map((work) => (
         <Card key={work.title}>
           <CardHeader>
-            <Link href={work.link} target="_blank" className="flex justify-between gap-2 items-center">
-              <div className="flex items-center gap-2">
+            <Link href={work.link} target="_blank" className="flex justify-between items-center">
+              <div className="flex items-center gap-3">
                 <Image src={work.icon} alt={work.title} className="h-8 w-auto" />
                 <div>
                   <CardTitle className="text-lg">{work.title}</CardTitle>
