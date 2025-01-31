@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import Image from "next/image";
 import { Link as LinkIcon } from "lucide-react";
 import Link from "next/link";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
 export default function Home() {
   return (
@@ -37,7 +38,20 @@ export default function Home() {
             <div className="flex flex-wrap gap-1">
               {work.technologies.map((technology) => <Badge key={technology} variant='secondary'>{technology}</Badge>)}
             </div>
-            <div className="flex justify-center"><Image src={work.image} alt={work.title} className="w-2/3" width={1000} height={1000} /></div>
+
+            <div className="flex justify-center">
+              <Carousel className="w-4/5">
+                <CarouselContent>
+                  {work.images.map((image, index) => (
+                    <CarouselItem key={index} className="flex justify-center">
+                      <Image src={image} alt={image} className="w-full" width={1000} height={1000} />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
           </CardContent>
         </Card>
       ))}
