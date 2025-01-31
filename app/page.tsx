@@ -1,10 +1,10 @@
 import { work, education } from "./work";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Image from "next/image";
 import { Link as LinkIcon } from "lucide-react";
 import Link from "next/link";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       {education.map((education) => (
         <Card key={education.school} className="shadow-none">
           <CardHeader className="flex flex-row gap-2 p-4">
-            <Image src={education.image} alt={education.school} className="w-10 h-10" width={100} height={100} />
+            <Image src={education.image} alt={education.school} className="h-10 w-auto" />
             <div className="flex flex-col">
               <CardTitle>{education.school}</CardTitle>
               <CardDescription>{education.degree}</CardDescription>
@@ -44,7 +44,7 @@ export default function Home() {
                 <CarouselContent>
                   {work.images.map((image, index) => (
                     <CarouselItem key={index} className="flex justify-center">
-                      <Image src={image} alt={image} className="w-full" width={1000} height={1000} />
+                      <Image src={image} alt={image.src} />
                     </CarouselItem>
                   ))}
                 </CarouselContent>
