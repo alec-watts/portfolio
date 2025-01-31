@@ -87,10 +87,13 @@ export default function Home() {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <div className="relative flex justify-center gap-2">
-                  <CarouselPrevious />
-                  <CarouselNext />
-                </div>
+                
+                {work.media.length > 1 && (
+                  <div className="relative flex justify-center gap-2">
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </div>
+                )}
               </Carousel>
             </div>
 
