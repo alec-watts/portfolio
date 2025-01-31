@@ -17,14 +17,15 @@ export default function Home() {
         <Image src={Face} alt="Face" className="w-32 h-auto rounded-lg" />
 
         <div className="flex flex-col gap-1">
-          <h1 className="text-3xl font-bold">Alec Watts</h1>
-          <h2 className="text-xl font-bold">Software Engineer</h2>
+          <h1 className="text-3xl font-semibold">Alec Watts</h1>
+          <p className="text-sm">(310) 922-1006</p>
+          <p className="text-sm">alecwatts1@gmail.com</p>
 
           <div className="flex gap-2">
-            <Link href="https://www.linkedin.com/in/alecwatts" target="_blank">
+            <Link href="https://www.linkedin.com/in/alexander-h-watts/" target="_blank">
               <Image src={LinkedIn} alt="LinkedIn" className="w-6 h-auto" />
             </Link>
-            <Link href="https://github.com/alecwatts" target="_blank">
+            <Link href="https://github.com/alec-watts" target="_blank">
               <Image src={Github} alt="Github" className="w-6 h-auto" />
             </Link>
           </div>

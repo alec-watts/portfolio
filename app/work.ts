@@ -76,7 +76,7 @@ export const work: Work[] = [
     icon: EDIcon,
     images: [ED1],
     link: "https://electricdevtools.com",
-    technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
+    technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "NPM", "Stripe", "Tailwind + Shadcn"],
     bulletPoints: [
       "Built fully managed and serverless S3 FFmpeg API, using Next.js, Prisma, Lambda, Docker, Clerk Auth & Stripe, providing developers with turn-key FFmpeg functionality, async/sync invocation, webhooks, logging, and a status dashboard without the need to deploy lower level infrastructure.",
       "Developed an instant, dynamic zip download solution using Google Cloudrun that constructs and streams zip files directly to the client based on a set of predefined target files specified by the application. This eliminates the need to create, store and manage zip files.",
