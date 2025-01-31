@@ -94,7 +94,7 @@ export const work: Work[] = [
     link: "https://portal.grablabs.com/chatalyst/join/",
     technologies: ["React.js", "Express.js", "GraphQL", "Firestore"],
     bulletPoints: [
-      "Spearheaded early AI adoption at GrabLabs by building a no-code tool  empowering non-technical team members to fine tune LLMs on Twitch stream content",  "Collaborated with senior developers to commercialize the tool as Chatalyst, a Twitch streamer extension", "Uses a fine-tuned LLM to analyze streamer transcriptions and chat activity, delivering real-time content suggestions designed to boost viewer engagement and subscription growth",
+      "Spearheaded early AI adoption at GrabLabs by building a no-code tool  empowering non-technical team members to fine tune LLMs on Twitch stream content",  "Collaborated with senior developers to commercialize the tool as Chatalyst, a Twitch streamer extension", "Chatalyst uses a fine-tuned LLM to analyze streamer transcriptions and chat activity, delivering real-time content suggestions designed to boost viewer engagement and subscription growth",
     ],
   },
   {
