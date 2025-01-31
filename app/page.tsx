@@ -11,14 +11,14 @@ export default function Home() {
       <h1 className="text-3xl font-bold">Work</h1>
       {work.map((work) => (
         <Card key={work.title} className="shadow-none">
-          <CardHeader>  
+          <CardHeader className="pb-3">  
             <Link href={work.link} target="_blank">
               <CardTitle className="flex items-center justify-between text-lg">{work.title} <LinkIcon className="h-4 w-4" /></CardTitle>
             </Link>
             <CardDescription>{work.position}</CardDescription>
           </CardHeader>
-          <CardContent>
-            <div className="flex flex-wrap gap-2">
+          <CardContent className="flex flex-col gap-4">
+            <div className="flex flex-wrap gap-1">
               {work.technologies.map((technology) => <Badge key={technology} variant='secondary'>{technology}</Badge>)}
             </div>
             <div className="flex justify-center"><Image src={work.image} alt={work.title} className="w-2/3" width={1000} height={1000} /></div>

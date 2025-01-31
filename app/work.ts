@@ -27,20 +27,20 @@ export const work: Work[] = [
     position: "Creator",
     image: "/electricdevtools/1.png",
     link: "https://electricdevtools.com",
-    technologies: ["Next.js", "PostgreSQL", "Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
+    technologies: ["Next.js", "PostgreSQL", "Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
   },
   {
     title: "Chatalyst - Twitch Extension",
     position: "SWE @ GrabLabs",
     image: "/chatalyst/1.png",
     link: "https://portal.grablabs.com/chatalyst/join/",
-    technologies: ["React", "Express"]
+    technologies: ["React.js", "Express.js", "GraphQL", "Firestore"]
   },
   {
     title: "Watts In The Box",
-    position: "Side Project",
+    position: "For Fun",
     image: "/wattsinthebox/1.png",
     link: "https://www.instagram.com/watts.in.the.box/",
-    technologies: ["Next.js", "PostgreSQL", "Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
+    technologies: ["ESP32", "RaspberryPi", "Micropython", "3D Printing", "Soldering"],
   },
 ];
