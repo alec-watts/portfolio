@@ -84,7 +84,7 @@ export default function Home() {
                       {typeof media === 'string' 
                         ? media.includes('https') 
                           ? <AspectRatio ratio={14 / 9}>
-                              <iframe className="w-full h-full" src={media} allowFullScreen />
+                              <iframe className="w-full h-full rounded-sm"  src={media} allowFullScreen />
                             </AspectRatio>
                           : <video src={media} className="rounded-sm" autoPlay muted loop playsInline />
                         : <Image src={media} alt={media.src} />
