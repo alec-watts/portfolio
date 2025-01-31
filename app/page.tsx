@@ -12,14 +12,14 @@ export default function Home() {
       <h1 className="text-3xl font-bold">Education</h1>
       {education.map((education) => (
         <Card key={education.school} className="shadow-none">
-          <CardHeader className="flex flex-row gap-2 p-4">
+          <CardHeader className="flex flex-row gap-2 p-4 pb-2">
             <Image src={education.image} alt={education.school} className="h-10 w-auto" />
             <div className="flex flex-col">
               <CardTitle>{education.school}</CardTitle>
               <CardDescription>{education.degree}</CardDescription>
             </div>
           </CardHeader>
-          {education.coursework && <CardContent className="flex flex-col gap-4">
+          {education.coursework && <CardContent className="flex flex-col gap-4 p-4 pt-0">
             <p className="text-sm">Coursework: {education.coursework}</p>
           </CardContent>}
         </Card>
