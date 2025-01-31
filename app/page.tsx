@@ -8,9 +8,7 @@ export default function Home() {
         <div key={work.id}>
           <h2>{work.title}</h2>
           <p>{work.subtitle}</p>
-          {work.technologies.map((technology) => (
-            <Badge key={technology} variant='secondary'>{technology}</Badge>
-          ))}
+          {work.technologies.map((technology) => <Badge key={technology} variant='secondary'>{technology}</Badge>)}
         </div>
       ))}
     </div>
