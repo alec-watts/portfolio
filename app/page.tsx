@@ -78,9 +78,12 @@ export default function Home() {
             <div className="flex justify-center">
               <Carousel className="w-4/5">
                 <CarouselContent>
-                  {work.images.map((image, index) => (
+                  {work.media.map((image, index) => (
                     <CarouselItem key={index} className="flex justify-center">
-                      <Image src={image} alt={image.src} />
+                      {typeof image === 'string' 
+                        ? <video src={image} className="rounded-sm" autoPlay muted loop playsInline controls />
+                        : <Image src={image} alt={image.src} />
+                      }
                     </CarouselItem>
                   ))}
                 </CarouselContent>

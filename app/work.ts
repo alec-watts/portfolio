@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 import UM from "@/public/education/UM.png";
 import HW from "@/public/education/HW.png";
 import MLIcon from "@/public/memorylabs/icon.png";
-import ML1 from "@/public/memorylabs/1.png";
+// import ML1 from "@/public/memorylabs/1.png";
 import SVIcon from "@/public/stablevideo/icon.png";
 import SV1 from "@/public/stablevideo/1.png";
 import EDIcon from "@/public/electricdevtools/icon.png";
@@ -38,7 +38,7 @@ interface Work {
   title: string;
   position: string;
   icon: StaticImageData;
-  images: StaticImageData[];
+  media: (StaticImageData | string)[];
   link: string;
   technologies: string[];
   bulletPoints: string[];
@@ -49,7 +49,7 @@ export const work: Work[] = [
     title: "Memory Labs",
     position: "Founder",
     icon: MLIcon,
-    images: [ML1],
+    media: ['/memorylabs/1.mp4'], // ML1
     link: "https://memorylabs.app",
     technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
     bulletPoints: [
@@ -63,7 +63,7 @@ export const work: Work[] = [
     title: "Stable Video",
     position: "SWE, GrabLabs",
     icon: SVIcon,
-    images: [SV1],
+    media: [SV1],
     link: "https://www.stablevideo.com/",
     technologies: ["Next.js", "Postgres + Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
     bulletPoints: [
@@ -74,7 +74,7 @@ export const work: Work[] = [
     title: "Electric Dev Tools",
     position: "Creator",
     icon: EDIcon,
-    images: [ED1],
+    media: [ED1],
     link: "https://electricdevtools.com",
     technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "NPM", "Stripe", "Tailwind + Shadcn"],
     bulletPoints: [
@@ -86,7 +86,7 @@ export const work: Work[] = [
     title: "Chatalyst - Twitch Extension",
     position: "SWE, GrabLabs",
     icon: CHIcon,
-    images: [CH1],
+    media: [CH1],
     link: "https://portal.grablabs.com/chatalyst/join/",
     technologies: ["React.js", "Express.js", "GraphQL", "Firestore"],
     bulletPoints: [
@@ -97,7 +97,7 @@ export const work: Work[] = [
     title: "Watts In The Box",
     position: "Project",
     icon: WBIcon,
-    images: [WB1],
+    media: [WB1],
     link: "https://www.instagram.com/watts.in.the.box/",
     technologies: ["ESP32", "RaspberryPi", "Micropython", "3D Printing", "Soldering"],
     bulletPoints: [
