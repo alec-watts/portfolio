@@ -44,3 +44,24 @@ export const work: Work[] = [
     technologies: ["ESP32", "RaspberryPi", "Micropython", "3D Printing", "Soldering"],
   },
 ];
+
+interface Education {
+  school: string;
+  degree: string;
+  image: string;
+  coursework?: string;
+}
+
+export const education: Education[] = [
+  {
+    school: "University of Michigan, Ann Arbor",
+    degree: "B.S. Computer Science",
+    image: "/UM.png",
+    coursework: "Data Structures & Algorithms, Operating Systems, Web Systems, Intr. Computer Security, Foundations of CS Theory, Intr. Artificial Intelligence, Conversational AI, Intr. Computer Organization",
+  },
+  {
+    school: "Harvard-Westlake",
+    degree: "High School Diploma",
+    image: "/HW.png",
+  },
+];
