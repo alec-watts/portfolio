@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Image from "next/image";
-import { Link as LinkIcon } from "lucide-react";
+import { Link as LinkIcon, FileUser } from "lucide-react";
 import Link from "next/link";
 import Face from "@/public/face.jpeg";
 import LinkedIn from "@/public/linkedin.png";
@@ -14,7 +14,7 @@ export default function Home() {
     <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-2">
       {/* Header */}
       <div className="flex gap-2 pt-10">
-        <Image src={Face} alt="Face" className="w-36 h-auto rounded-lg" />
+        <Image src={Face} alt="Face" className="w-32 h-auto rounded-lg" />
 
         <div className="flex flex-col gap-1">
           <h1 className="text-3xl font-bold">Alec Watts</h1>
@@ -28,10 +28,13 @@ export default function Home() {
               <Image src={Github} alt="Github" className="w-6 h-auto" />
             </Link>
           </div>
+          <Link href="/alexander-watts-resume.pdf" target="_blank" className="flex text-sm items-center gap-1">
+            Resume <FileUser className="h-4 w-4" />
+          </Link>
         </div>
       </div>
 
-      <h1 className="text-3xl font-semibold pl-1 pt-10">Education</h1>
+      {/* <h1 className="text-3xl font-semibold pl-1 pt-10">Education</h1> */}
       {education.map((education)   => (
         <Card key={education.school}>
           <CardHeader className="flex flex-row gap-2 p-4 pb-2">
@@ -50,7 +53,7 @@ export default function Home() {
         </Card>
       ))}
 
-      <h1 className="text-3xl font-semibold pl-1 pt-10">My Work</h1>
+      <h1 className="text-3xl font-semibold pl-1 pt-8 text-center">My Work</h1>
       {work.map((work) => (
         <Card key={work.title}>
           <CardHeader className="pb-3">
