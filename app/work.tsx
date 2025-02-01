@@ -57,10 +57,11 @@ export const work: Work[] = [
     link: "https://memorylabs.app",
     technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "Clerk Auth", "Stripe", "Tailwind + Shadcn"],
     bulletPoints: [
-      "Built an AI SaaS platform that automates workflows for home photo and video digitization businesses, featuring a custom Dockerized Lambda processing pipeline that performs scene detection, autocropping, autorotation, deduplication, transcription, and datetime/location metadata inference on scanned photos & videos.",
-      "Generated profit digitizing tens of thousands of photos and hundreds of videos for B2C operation. Conducted dozens of B2B sales calls and attended industry conferences to guide software development roadmap.",
-      "Engineered a responsive web dashboard, leveraging the Next.js cache and CloudFront signed cookies to deliver downsized image and HLS video copies, enabling business owners to quickly view and manage gigabytes of uploaded content.",
+      "B2B SaaS platform to streamline workflows for home photo and video digitization businesses.",
+      "Engineered a media processing pipeline to automate labor-intensive tasks of extracting scenes; adding date / location metadata; and cropping / rotating / deduplicating photos.",
+      "Served stream-optimized video (HLS) & downsized image copies over CloudFront, enabling business owners to edit GBs content on the web.",
       "Integrated Google Drive, Google Photos, Dropbox, and Apple Photos for seamless file uploads and downloads.",
+      "Utilized this software to digitize tens of thousands of photos and hundreds of videos for B2C operation, driving sales and providing real-world feedback to refine the software. ",
     ],
   },
   {
