@@ -69,7 +69,7 @@ export const work: Work[] = [
     icon: SVIcon,
     media: [SV1, SV2, SV3],
     link: "https://www.stablevideo.com/",
-    technologies: ["Next.js", "Postgres + Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
+    technologies: ["Next.js", "Postgres + Prisma", "Firebase Auth", "S3 + CloudFront", "Stripe", "Tailwind",],
     bulletPoints: [
       "Collaborated to build stablevideo.com, a consumer application giving users access to StabilityAI's video generation model, gaining foundational webdev experience"
     ],
@@ -80,7 +80,7 @@ export const work: Work[] = [
     icon: EDIcon,
     media: ['https://www.youtube.com/embed/TN5xaWhzXvs?si=o9Va7yrEe9v8Ws-v', Zipper, FFmpeg, NPM],
     link: "https://electricdevtools.com",
-    technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "NPM", "Stripe", "Tailwind + Shadcn"],
+    technologies: ["Next.js", "Postgres + Prisma", "Docker", "AWS", "GCP", "FFmpeg", "Clerk Auth", "NPM", "Stripe", "Tailwind + Shadcn"],
     bulletPoints: [
       "Perform FFmpeg operations on files in your S3 bucket with a simple API",
       "Generate a .zip download link so your users can download multiple files at once. No need to create, store, or manage .zip files.",
