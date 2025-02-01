@@ -71,7 +71,7 @@ export const work: Work[] = [
     link: "https://www.stablevideo.com/",
     technologies: ["Next.js", "Postgres + Prisma", "Tailwind", "S3 + CloudFront", "Stripe"],
     bulletPoints: [
-      "Alongside a team built a consumer application for StabilityAI’s video generation model, using Next.js, Prisma Postgres, S3 and Cloudfront, where users can generate videos from text & photo, view history, & vote on results."
+      "Collaborated to build stablevideo.com, a consumer application giving users access to StabilityAI's video generation model, gaining foundational webdev experience"
     ],
   },
   {
@@ -82,8 +82,8 @@ export const work: Work[] = [
     link: "https://electricdevtools.com",
     technologies: ["Next.js", "Postgres + Prisma", "FFmpeg", "Docker", "AWS", "GCP", "Clerk Auth", "NPM", "Stripe", "Tailwind + Shadcn"],
     bulletPoints: [
-      "Built fully managed and serverless S3 FFmpeg API, using Next.js, Prisma, Lambda, Docker, Clerk Auth & Stripe, providing developers with turn-key FFmpeg functionality, async/sync invocation, webhooks, logging, and a status dashboard without the need to deploy lower level infrastructure.",
-      "Developed an instant, dynamic zip download solution using Google Cloudrun that constructs and streams zip files directly to the client based on a set of predefined target files specified by the application. This eliminates the need to create, store and manage zip files.",
+      "Perform FFmpeg operations on files in your S3 bucket with a simple API",
+      "Generate a .zip download link so your users can download multiple files at once. No need to create, store, or manage .zip files.",
     ],
   },
   {

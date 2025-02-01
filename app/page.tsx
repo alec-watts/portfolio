@@ -15,9 +15,9 @@ import Custom from "./Custom";
 
 export default function Home() {
   return (
-    <div className="w-full md:w-2/3 flex flex-col gap-2">
+    <div className="w-full md:w-3/5 flex flex-col gap-2">
       {/* Header */}
-      <div className="flex gap-2 pt-10">
+      <div className="flex gap-2 pt-4">
         <Image src={Face} alt="Face" className="h-20 w-auto rounded-lg" />
         <div className="flex flex-col justify-around">
           <h1 className="text-xl md:text-4xl font-semibold">Alec Watts</h1>
