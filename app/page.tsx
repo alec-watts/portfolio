@@ -62,7 +62,7 @@ export default function Home() {
       {work.map((work) => (
         <Card key={work.title}>
           <CardHeader>
-            <Link href={work.link} target="_blank" className="flex justify-between items-center">
+            <Link href={work.link || ''} target="_blank" className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <Image src={work.icon} alt={work.title} className="h-8 w-auto" />
                 <div>
@@ -70,7 +70,7 @@ export default function Home() {
                   <CardDescription>{work.position}</CardDescription>
                 </div>
               </div>
-              <LinkIcon className="h-4 w-4" />
+              {work.link && <LinkIcon className="h-4 w-4" />}
             </Link>
           </CardHeader>
 

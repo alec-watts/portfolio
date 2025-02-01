@@ -14,6 +14,15 @@ import CHIcon from "@/public/chatalyst/icon.png";
 import CH1 from "@/public/chatalyst/1.png";
 import WBIcon from "@/public/wattsinthebox/icon.png";
 import { InstagramEmbed } from 'react-social-media-embed';
+import FlorenceIcon from "@/public/florence/icon.png"
+import Florence0 from "@/public/florence/0.jpeg"
+import Florence3 from "@/public/florence/3.jpeg"
+import Florence4 from "@/public/florence/4.jpeg"
+import Florence5 from "@/public/florence/5.jpeg"
+import Florence6 from "@/public/florence/6.jpeg"
+import Florence7 from "@/public/florence/7.jpeg"
+import Florence8 from "@/public/florence/8.jpeg"
+import Florence9 from "@/public/florence/9.jpeg"
 
 interface Education {
   school: string;
@@ -43,7 +52,7 @@ interface Work {
   icon: StaticImageData;
   media: (StaticImageData | string)[];
   customElement?: React.ReactNode;
-  link: string;
+  link?: string;
   technologies: string[];
   bulletPoints: string[];
 }
@@ -60,7 +69,7 @@ export const work: Work[] = [
       "B2B SaaS platform to streamline workflows for home photo and video digitization businesses.",
       "Engineered a media processing pipeline to automate labor-intensive tasks of extracting scenes; adding date / location metadata; and cropping / rotating / deduplicating photos.",
       "Served stream-optimized video (HLS) & downsized image copies over CloudFront, enabling business owners to edit GBs content on the web.",
-      "Integrated Google Drive, Google Photos, Dropbox, and Apple Photos for seamless file uploads and downloads.",
+      "Implemented Google Drive, Google Photos, Dropbox, and Apple Photos integrations for seamless file uploads and downloads.",
       "Utilized this software to digitize tens of thousands of photos and hundreds of videos for B2C operation, driving sales and providing real-world feedback to refine the software. ",
     ],
   },
@@ -112,6 +121,16 @@ export const work: Work[] = [
       'Remote control using Apple Shortcuts over Local Network',
       'Constructed with 3D printed pieces & off the shelf materials',
       'Inspired by James Turrell\'s artwork',
+    ],
+  },
+  {
+    title: "Photography in Florence",
+    position: "Semester Abroad",
+    icon: FlorenceIcon,
+    media: [Florence3, Florence6, Florence7, Florence4, Florence8, Florence9, Florence5, Florence0],
+    technologies: ["Photography", "Camouflage"],
+    bulletPoints: [
+      'Captured photos of nature, architecture, and events while living abroad in Florence, Italy',
     ],
   },
 ];
