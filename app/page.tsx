@@ -97,7 +97,7 @@ export default function Home() {
                                 <iframe className="w-full h-full rounded-sm"  src={media} allowFullScreen />
                               </AspectRatio>
                             : <video src={media} className="rounded-sm" autoPlay muted loop playsInline />
-                          : <Image src={media} alt={media.src} />
+                          : <Image src={media} alt={media.src} className="rounded-sm" />
                         }
                       </CarouselItem>
                     ))}
